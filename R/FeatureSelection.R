@@ -5,8 +5,7 @@ library(reshape2)
 
 #Input is the data frame 'work' after conducting normalization
 #Output is the data frame 'work' after removing noisy features 
-#featureSelectionGoal is either 'TPR.TNR' or 'RemoveInterference'
-#'TPR.TNR' selects the features more likely to enhance the true positive rate
+
 
 
 FeatureSelection <- function(work, featureSelectionGoal='TPR.TNR'){
