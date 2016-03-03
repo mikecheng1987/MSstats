@@ -3,6 +3,7 @@
 #Output is the data frame 'work' after removing noisy features 
 #This process removes features with interference across the MS runs
 #remove_proteins_with_interference==TRUE allows the algorithm to remove the whole protein if deem interfered
+#Add another line ...
 
 .feature_selection <- function(work, leave_one_out=FALSE, remove_proteins_with_interference){
 
