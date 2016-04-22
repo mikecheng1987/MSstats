@@ -592,7 +592,7 @@ modelBasedQCPlots <- function(data,type,axis.size=10,dot.size=3,text.size=7,lege
 # if yes, length of group and length of contrast won't agree
 #############################################
 
-.chechGroupComparisonAgreement <- function(sub1,contrast.matrix) {
+.checkGroupComparisonAgreement <- function(sub1,contrast.matrix) {
   	tempSub <- as.numeric(as.character(unique(sub1[, c("GROUP")])))
   	positionMiss <- setdiff(seq(1,length(contrast.matrix)), tempSub)
   	contrast.matrix.sub1 <- contrast.matrix[tempSub]
